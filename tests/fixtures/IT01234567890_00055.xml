@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>01234567890</IdCodice></IdTrasmittente><ProgressivoInvio>00055</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>0000000</CodiceDestinatario></DatiTrasmissione>
+    <CedentePrestatore><DatiAnagrafici><IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01234567890</IdCodice></IdFiscaleIVA><Anagrafica><Denominazione>SCHINOSA VINI SRL (TEST)</Denominazione></Anagrafica><RegimeFiscale>RF01</RegimeFiscale></DatiAnagrafici><Sede><Indirizzo>Via Test 1</Indirizzo><CAP>31100</CAP><Comune>Treviso</Comune><Provincia>TV</Provincia><Nazione>IT</Nazione></Sede></CedentePrestatore>
+    <CessionarioCommittente><DatiAnagrafici><IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01241890258</IdCodice></IdFiscaleIVA><Anagrafica><Denominazione>LA CULLA DI ANGELETTI DANIELE</Denominazione></Anagrafica></DatiAnagrafici><Sede><Indirizzo>Via Giovanni Paolo I 9</Indirizzo><CAP>32040</CAP><Comune>Comelico Superiore</Comune><Provincia>BL</Provincia><Nazione>IT</Nazione></Sede></CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali><DatiGeneraliDocumento><TipoDocumento>TD01</TipoDocumento><Divisa>EUR</Divisa><Data>2025-06-10</Data><Numero>55</Numero><ImportoTotaleDocumento>124.44</ImportoTotaleDocumento></DatiGeneraliDocumento></DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee><NumeroLinea>1</NumeroLinea><Descrizione>ART. 4471 CONF. 6 BT</Descrizione><Quantita>1.00</Quantita><UnitaMisura>CF</UnitaMisura><PrezzoUnitario>48.00</PrezzoUnitario><PrezzoTotale>48.00</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>2</NumeroLinea><Descrizione>LAGREIN ALTO ADIGE DOC 75CL</Descrizione><Quantita>6.00</Quantita><UnitaMisura>BT</UnitaMisura><PrezzoUnitario>9.00</PrezzoUnitario><PrezzoTotale>54.00</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DatiRiepilogo><AliquotaIVA>22.00</AliquotaIVA><ImponibileImporto>102.00</ImponibileImporto><Imposta>22.44</Imposta><EsigibilitaIVA>I</EsigibilitaIVA></DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
