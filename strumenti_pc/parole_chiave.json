@@ -1,0 +1,65 @@
+{
+  "_nota": "Parole chiave per voce (1-10). 'forti' = basta una corrispondenza; 'generiche' = servono almeno due parole diverse nel contenuto (nel nome file basta una). 'pattern' = espressioni regolari applicate al testo normalizzato (minuscolo, senza accenti). I numeri di pratica/contratto/polizza NON stanno qui: vanno nel file privato parole_chiave_private.txt (riga: numero_voce;parola).",
+  "voci": {
+    "1": {
+      "nome": "Criptovalute 2025",
+      "forti": ["binance", "coinbase", "coinbase wallet", "revolut", "kraken", "bitpanda", "crypto.com", "tax report", "imposta di bollo", "criptovalute", "criptovaluta", "cripto", "crypto", "bitcoin", "ethereum", "btc", "usdt"],
+      "generiche": ["estratto", "statement", "transaction", "transazioni", "wallet", "portafoglio"],
+      "pattern": []
+    },
+    "2": {
+      "nome": "Finanziamenti",
+      "forti": ["findomestic", "ford credit", "fordcredit", "santander", "compass", "volksbank", "piano di ammortamento", "piano rate", "documento di sintesi", "mutuo ipotecario", "mutuo", "finanziamento", "avepa", "contributo cella"],
+      "generiche": ["rata", "rate", "prestito", "taeg", "tan", "contratto di credito", "credito al consumo"],
+      "pattern": []
+    },
+    "3": {
+      "nome": "Noleggi",
+      "forti": ["grenke", "rent for you", "rent foryou", "rentforyou", "intesa sanpaolo rent", "clickufficio", "click ufficio", "verbale di consegna", "noleggio operativo"],
+      "generiche": ["noleggio", "canone", "locazione operativa"],
+      "pattern": []
+    },
+    "4": {
+      "nome": "Stripe / POS",
+      "forti": ["stripe", "payout", "riepilogo saldo", "nexi", "sumup"],
+      "generiche": ["balance", "saldo", "pos", "incassi", "transazioni"],
+      "pattern": []
+    },
+    "5": {
+      "nome": "eviivo",
+      "forti": ["eviivo", "ire004252", "evl023556"],
+      "generiche": [],
+      "pattern": ["\\bev00\\d{4,}\\b"]
+    },
+    "6": {
+      "nome": "Fatture elettroniche / fornitori 2025",
+      "forti": ["fatturapa", "fattura elettronica", "fatture elettroniche", "sdi", "unicomm", "guarnier", "worndle", "woerndle", "goodilia", "cortina bevande", "schinosa", "cuzziol", "metro", "macelleria", "birrificio", "aruba"],
+      "generiche": ["fattura", "fatture", "invoice", "ddt", "nota di credito"],
+      "pattern": ["\\bit\\d{11}_[0-9a-z]{5}\\b", "fatturaelettronica"]
+    },
+    "7": {
+      "nome": "ISA e Redditi",
+      "forti": ["eg44u", "dati compilati", "scheda redditi", "redditi 2026", "redditi 2025", "modello unico", "modello redditi", "dichiarazione dei redditi", "indici sintetici", "studio dacol", "dacol", "isa"],
+      "generiche": ["redditi", "unico", "dichiarazione", "irpef", "quadro rg", "quadro re", "quadro rs"],
+      "pattern": []
+    },
+    "8": {
+      "nome": "Contratti e beni",
+      "forti": ["affitto azienda", "affitto di azienda", "valgrande", "moie", "de martin topranin", "de martin", "rogito", "notaio", "cespiti", "elenco beni", "prezzo moie", "ramo di azienda"],
+      "generiche": ["inventario", "attrezzature", "beni", "comodato", "contratto"],
+      "pattern": ["affitto\\W+d\\W*azienda", "ramo\\W+d\\W*azienda"]
+    },
+    "9": {
+      "nome": "Assicurazioni e contributi",
+      "forti": ["arca vita", "arcavita", "axa", "avepa", "cella frigorifera", "polizza"],
+      "generiche": ["contributo", "assicurazione", "premio", "sinistro", "quietanza"],
+      "pattern": []
+    },
+    "10": {
+      "nome": "Corrispettivi e magazzino",
+      "forti": ["zmenu", "z menu", "report giornaliero", "corrispettivi", "rimanenze", "giacenze", "chiusura giornaliera", "chiusura di cassa", "chiusure"],
+      "generiche": ["chiusura", "inventario", "magazzino", "scontrini", "incasso"],
+      "pattern": []
+    }
+  }
+}

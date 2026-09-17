@@ -1,0 +1,16 @@
+# Dati personali e fiscali: MAI nel repository (e' pubblico)
+parole_chiave_private.txt
+*.csv
+*.xlsx
+*.xls
+*.pdf
+*.xml
+*.p7m
+*.eml
+LA CULLA*
+00_scan/
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
