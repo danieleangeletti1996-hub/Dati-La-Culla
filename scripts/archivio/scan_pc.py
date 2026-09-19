@@ -146,11 +146,16 @@ def main(argv=None):
     ap.add_argument("--copy-to", help="cartella ARCHIVIO in cui copiare i file delle voci fiscali (solo copie)")
     ap.add_argument("--no-content", action="store_true", help="non leggere il contenuto dei file (solo nomi)")
     ap.add_argument("--max-hash-mb", type=int, default=200)
+    ap.add_argument("--exclude", nargs="*", default=[],
+                    help="cartelle da non scandire (es. la cartella Google Drive sincronizzata e l'ARCHIVIO stesso)")
     args = ap.parse_args(argv)
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     limit = args.max_hash_mb * 1024 * 1024
+    excludes = [out.resolve()] + [Path(e).resolve() for e in args.exclude if Path(e).exists()]
+    if args.copy_to and Path(args.copy_to).exists():
+        excludes.append(Path(args.copy_to).resolve())
     rows, by_hash, found, problems = [], defaultdict(list), defaultdict(list), []
     n_dirs = 0
     for root in args.roots:
@@ -160,7 +165,8 @@ def main(argv=None):
             continue
         for dirpath, dirnames, filenames in os.walk(rp, onerror=lambda e: problems.append(f"non accessibile: {e.filename}")):
             dirnames[:] = [d for d in dirnames if d.lower() not in SKIP_DIRS and not d.startswith(".")]
-            if args.out and Path(dirpath).resolve() == out.resolve():
+            dp = Path(dirpath).resolve()
+            if any(dp == ex or ex in dp.parents for ex in excludes):
                 dirnames[:] = []
                 continue
             n_dirs += 1
