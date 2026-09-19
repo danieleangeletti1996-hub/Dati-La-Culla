@@ -12,6 +12,11 @@ Script in `../scripts/`:
 - `fatturapa/parse_fatture.py` – da XML/P7M FatturaPA a totali per categoria (carne, sfarinati, vino, birra…).
 - `stripe/export_stripe.py` – export balance transactions e payout 2025.
 - `inventario/frames_from_video.py` – fotogrammi dai video del giro locale.
-- `archivio/scan_pc.py` – inventario del PC per la sessione locale.
+- `archivio/scan_pc.py` – inventario del PC per la sessione locale. Si può lanciare anche senza Claude, sul PC di Daniele, da un prompt dei comandi nella cartella del repo (branch `claude/fiscal-docs-2025-2026-efw5bg`):
+
+  ```
+  python scripts\archivio\scan_pc.py --roots "%USERPROFILE%" --out "G:\Il mio Drive\LA CULLA – ARCHIVIO\00_scan" --copy-to "G:\Il mio Drive\LA CULLA – ARCHIVIO"
+  ```
+  Se la cartella Drive locale non è in `G:\Il mio Drive`, sostituire il percorso con quello reale (o con `%USERPROFILE%\Documenti\LA CULLA – ARCHIVIO`). Solo lettura e copie: non sposta né cancella nulla.
 
 I documenti e i dati restano su Google Drive (`LA CULLA – ARCHIVIO`); in questo repo solo script, template e checklist.
