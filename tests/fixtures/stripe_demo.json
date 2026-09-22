@@ -1,0 +1,13 @@
+{
+  "balance_transactions": [
+    {"id": "txn_001", "created": 1736412000, "reporting_category": "charge", "type": "charge", "amount": 25000, "fee": 500, "net": 24500, "currency": "eur", "status": "available", "description": "Prenotazione B&B 10/01", "source": "ch_001"},
+    {"id": "txn_002", "created": 1736498400, "reporting_category": "charge", "type": "charge", "amount": 18000, "fee": 380, "net": 17620, "currency": "eur", "status": "available", "description": "Prenotazione B&B 11/01", "source": "ch_002"},
+    {"id": "txn_003", "created": 1736584800, "reporting_category": "refund", "type": "refund", "amount": -5000, "fee": 0, "net": -5000, "currency": "eur", "status": "available", "description": "Rimborso parziale", "source": "re_001"},
+    {"id": "txn_004", "created": 1736671200, "reporting_category": "fee", "type": "stripe_fee", "amount": -250, "fee": 0, "net": -250, "currency": "eur", "status": "available", "description": "Canone Terminal", "source": null},
+    {"id": "txn_005", "created": 1736757600, "reporting_category": "payout", "type": "payout", "amount": -36870, "fee": 0, "net": -36870, "currency": "eur", "status": "available", "description": "STRIPE PAYOUT", "source": "po_001"},
+    {"id": "txn_006", "created": 1739350800, "reporting_category": "charge", "type": "charge", "amount": 30000, "fee": 600, "net": 29400, "currency": "eur", "status": "available", "description": "Prenotazione B&B 12/02", "source": "ch_003"}
+  ],
+  "payouts": [
+    {"id": "po_001", "created": 1736757600, "arrival_date": 1736930400, "amount": 36870, "currency": "eur", "status": "paid", "method": "standard", "statement_descriptor": "STRIPE", "description": "STRIPE PAYOUT"}
+  ]
+}
