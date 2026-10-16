@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>01274580248</IdCodice></IdTrasmittente><ProgressivoInvio>00002</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>0000000</CodiceDestinatario></DatiTrasmissione>
+    <CedentePrestatore><DatiAnagrafici><IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01274580248</IdCodice></IdFiscaleIVA><Anagrafica><Denominazione>GUARNIER CATERING UNICOMM SRL (TEST)</Denominazione></Anagrafica><RegimeFiscale>RF01</RegimeFiscale></DatiAnagrafici><Sede><Indirizzo>Via E. Mattei 50</Indirizzo><CAP>36031</CAP><Comune>Dueville</Comune><Provincia>VI</Provincia><Nazione>IT</Nazione></Sede></CedentePrestatore>
+    <CessionarioCommittente><DatiAnagrafici><IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01241890258</IdCodice></IdFiscaleIVA><Anagrafica><Denominazione>LA CULLA DI ANGELETTI DANIELE</Denominazione></Anagrafica></DatiAnagrafici><Sede><Indirizzo>Via Giovanni Paolo I 9</Indirizzo><CAP>32040</CAP><Comune>Comelico Superiore</Comune><Provincia>BL</Provincia><Nazione>IT</Nazione></Sede></CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali><DatiGeneraliDocumento><TipoDocumento>TD04</TipoDocumento><Divisa>EUR</Divisa><Data>2025-04-02</Data><Numero>NC7</Numero><ImportoTotaleDocumento>13.18</ImportoTotaleDocumento></DatiGeneraliDocumento></DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee><NumeroLinea>1</NumeroLinea><Descrizione>RESO PROSECCO DOC TREVISO EXTRA DRY 75CL</Descrizione><Quantita>2.00</Quantita><UnitaMisura>BT</UnitaMisura><PrezzoUnitario>5.40</PrezzoUnitario><PrezzoTotale>10.80</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DatiRiepilogo><AliquotaIVA>22.00</AliquotaIVA><ImponibileImporto>10.80</ImponibileImporto><Imposta>2.38</Imposta><EsigibilitaIVA>I</EsigibilitaIVA></DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>

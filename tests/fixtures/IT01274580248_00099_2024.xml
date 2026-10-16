@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione><IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>01274580248</IdCodice></IdTrasmittente><ProgressivoInvio>00099</ProgressivoInvio><FormatoTrasmissione>FPR12</FormatoTrasmissione><CodiceDestinatario>0000000</CodiceDestinatario></DatiTrasmissione>
+    <CedentePrestatore><DatiAnagrafici><IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01274580248</IdCodice></IdFiscaleIVA><Anagrafica><Denominazione>GUARNIER CATERING UNICOMM SRL (TEST)</Denominazione></Anagrafica><RegimeFiscale>RF01</RegimeFiscale></DatiAnagrafici><Sede><Indirizzo>Via E. Mattei 50</Indirizzo><CAP>36031</CAP><Comune>Dueville</Comune><Provincia>VI</Provincia><Nazione>IT</Nazione></Sede></CedentePrestatore>
+    <CessionarioCommittente><DatiAnagrafici><IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01241890258</IdCodice></IdFiscaleIVA><Anagrafica><Denominazione>LA CULLA DI ANGELETTI DANIELE</Denominazione></Anagrafica></DatiAnagrafici><Sede><Indirizzo>Via Giovanni Paolo I 9</Indirizzo><CAP>32040</CAP><Comune>Comelico Superiore</Comune><Provincia>BL</Provincia><Nazione>IT</Nazione></Sede></CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali><DatiGeneraliDocumento><TipoDocumento>TD01</TipoDocumento><Divisa>EUR</Divisa><Data>2024-12-30</Data><Numero>9901</Numero><ImportoTotaleDocumento>110.00</ImportoTotaleDocumento></DatiGeneraliDocumento></DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee><NumeroLinea>1</NumeroLinea><Descrizione>CARNE DI CERVO SPEZZATINO</Descrizione><Quantita>5.00</Quantita><UnitaMisura>KG</UnitaMisura><PrezzoUnitario>20.00</PrezzoUnitario><PrezzoTotale>100.00</PrezzoTotale><AliquotaIVA>10.00</AliquotaIVA></DettaglioLinee>
+      <DatiRiepilogo><AliquotaIVA>10.00</AliquotaIVA><ImponibileImporto>100.00</ImponibileImporto><Imposta>10.00</Imposta><EsigibilitaIVA>I</EsigibilitaIVA></DatiRiepilogo>
+    </DatiBeniServizi>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>

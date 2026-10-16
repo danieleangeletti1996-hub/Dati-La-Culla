@@ -1,0 +1,92 @@
+{
+  "_nota": "Regole di classificazione delle righe fattura. I 'keywords' sono radici cercate a inizio parola nella descrizione (minuscolo, senza accenti). 'escludi' annulla la categoria se presente. 'aliquote_attese' serve solo per segnalare le righe da verificare. Ordine di priorita' in caso di pareggio: carne, pesce, sfarinati, vino, birra, altre_bevande_alcoliche, bevande_analcoliche, latticini, ortofrutta, pane_pasta_riso, altro_alimentare, non_alimentare.",
+  "categorie": {
+    "carne": {
+      "keywords": ["carne", "carni", "manzo", "bovin", "vitell", "maial", "suin", "agnell", "caprett", "poll", "tacchin", "anatr", "oca ", "faraon", "conigl", "cervo", "capriol", "selvaggin", "salsicc", "wurstel", "würstel", "wuerstel", "speck", "prosciutt", "salam", "pancett", "guancial", "bresaol", "lardo", "coppa", "mortadell", "cotechin", "costin", "costat", "filett", "controfilett", "entrecot", "tagliat", "hamburger", "macinat", "stinco", "ossobuc", "brasat", "roastbeef", "roast beef", "carpacc", "fegat", "tripp", "lonza", "lombo", "arrost", "spiedin", "scaloppin", "fesa", "sottofesa", "girell", "scamon", "cappello del prete", "diafram", "gallett", "gulasch", "goulash", "kaiser", "cotolett", "polpett", "ragu", "ragù", "porchett", "luganeg", "cervell", "rognon", "capocoll", "culatell", "lingua", "carrè", "carre ", "lombat", "sovracosc", "petto di", "coscia", "cosce", "alett", "fettin", "bistecc", "nodin", "reale", "pastissad", "cervo", "wagyu", "angus", "picanha"],
+      "escludi": ["tonno", "salmone", "pesce", "gambero", "polpo", "seppia", "calamar", "melanzan", "brodo", "dado", "vegetal", "soia", "seitan", "tofu", "senza carne", "spezie", "pepe", "piatto", "posate", "coltell", "termometro"],
+      "aliquote_attese": [10],
+      "sotto": {"salumi": ["speck", "prosciutt", "salam", "pancett", "guancial", "bresaol", "lardo", "coppa", "mortadell", "capocoll", "culatell", "porchett", "wurstel", "würstel", "wuerstel"]}
+    },
+    "pesce": {
+      "keywords": ["pesce", "pesci", "trota", "trote", "salmon", "tonno", "baccal", "merluzz", "gamber", "calamar", "cozz", "vongol", "orata", "branzin", "spigol", "polp", "sepp", "scampi", "ostric", "capesant", "acciugh", "alici", "sgombr", "aringh", "anguill", "caviale", "uova di", "storione", "rana pescatr", "sogliol", "rombo", "molluschi", "crostac"],
+      "escludi": ["polpett", "polpa", "spada da", "sugo"],
+      "aliquote_attese": [10]
+    },
+    "sfarinati": {
+      "keywords": ["farina", "farine", "semola", "semolin", "sfarinat", "polenta", "bramata", "fioretto", "grano saracen", "saraceno", "fecola", "amido", "manitoba", "tipo 00", "tipo 0 ", "tipo 1 ", "tipo 2 ", "integrale", "segale", "farro", "kamut", "pizza mix", "mix pizza", "agugiaro", "figna", "5 stagioni", "cinque stagioni", "caputo", "petra ", "molino", "mulino", "germe di grano", "crusca", "maizena", "frumento", "granoturco", "mais macinat", "farina di mais", "riso macinat"],
+      "escludi": ["pasta ", "pasta di", "spaghett", "tagliatell", "penne", "gnocch", "pane ", "panin", "grissin", "cracker", "biscott", "brioch", "cornett", "pangrattat", "pan grattato", "birra", "orzo tostat", "caffe", "caffè", "riso "],
+      "aliquote_attese": [4],
+      "sotto": {"polenta_mais": ["polenta", "bramata", "fioretto", "farina di mais", "granoturco"]}
+    },
+    "vino": {
+      "keywords": ["vino", "vini", "prosecco", "spumante", "franciacorta", "champagne", "trentodoc", "trento doc", "lambrusc", "brut", "extra dry", "millesimat", "cabernet", "merlot", "pinot", "chardonnay", "sauvignon", "gewurztraminer", "gewürztraminer", "traminer", "lagrein", "teroldego", "amarone", "ripasso", "valpolicella", "barolo", "barbaresc", "nebbiolo", "barbera", "chianti", "brunello", "montepulcian", "sangioves", "primitivo", "negroamar", "nero d'avola", "syrah", "shiraz", "carmener", "refosco", "raboso", "friulano", "ribolla", "malvasia", "moscato", "muller", "müller", "kerner", "sylvaner", "riesling", "schiava", "santa maddalena", "rosato", "rose ", "rosé", "passito", "vin santo", "recioto", "soave", "bardolino", "lugana", "garganega", "verduzzo", "manzoni", "incrocio", "cuvee", "cuvée", "docg", "doc ", "igt", "vsq", "asolo", "valdobbiadene", "conegliano", "cartizze", "col fondo", "bollicin", "fragolino", "vernacc", "greco di", "falanghin", "fiano", "aglianico", "cannonau", "vermentino", "etna ", "vino rosso", "vino bianco", "rosso ", "bianco "],
+      "escludi": ["birra", "aceto", "vinaigr", "bicchier", "calice", "calici", "cavatapp", "flute", "flût", "bianco d'uovo", "cioccolato bianco", "pane bianco", "peperone", "cipolla", "cavolo", "fagiol", "zucchero", "riso ", "pepe bianco", "carne", "pesce", "tovagl", "salsa", "vermouth", "vermut", "grappa", "amaro", "gin ", "vodka", "rum ", "whisky", "liquor", "sambuca", "limoncell", "brandy", "cognac", "cocktail", "aperol", "campari", "spritz ", "sciropp", "succo", "acqua"],
+      "aliquote_attese": [22]
+    },
+    "birra": {
+      "keywords": ["birra", "birre", "beer", "bier ", "lager", "pils", "pilsner", "weiss", "weizen", "weissbier", "ipa ", "ipa", "ale ", "stout", "bock", "dunkel", "helles", "hell ", "forst", "menabrea", "pedavena", "moretti", "peroni", "ichnusa", "paulaner", "augustiner", "erdinger", "franziskaner", "weihenstephan", "kulmbacher", "zwickel", "guinness", "corona", "heineken", "theresianer", "birrificio", "brauerei", "kellerbier", "radler", "blanche", "lambic", "gueuze", "trappist", "chimay", "leffe", "hoegaarden", "castello", "baladin", "poretti", "nastro azzurro", "becks", "beck's", "tennent", "ceres", "spaten", "loewenbrau", "löwenbräu", "hofbrau", "hofbräu", "warsteiner", "bitburger", "krombacher", "hb ", "fusto"],
+      "escludi": ["vino", "prosecco", "sciropp", "aceto", "lievito di birra", "pane alla birra"],
+      "aliquote_attese": [22],
+      "sotto": {"fusti": ["fusto", "fusti", "keg"]}
+    },
+    "altre_bevande_alcoliche": {
+      "keywords": ["grappa", "amaro", "amari", "gin ", "vodka", "rum ", "whisky", "whiskey", "liquor", "sambuca", "limoncell", "brandy", "cognac", "armagnac", "vermouth", "vermut", "aperol", "campari", "bitter", "select", "sidro", "cidre", "distillat", "acquavite", "genziana", "jagermeister", "jägermeister", "tequila", "mezcal", "pisco", "cachaca", "cachaça", "bombardino", "vov ", "zabov", "punch", "vin brule", "vin brulé", "spritz"],
+      "escludi": [],
+      "aliquote_attese": [22]
+    },
+    "bevande_analcoliche": {
+      "keywords": ["acqua", "coca", "cola", "fanta", "sprite", "aranciat", "limonat", "chinott", "gassos", "the ", "tè ", "te freddo", "succo", "succhi", "nettare", "red bull", "energy", "tonica", "ginger", "lemonsoda", "schweppes", "fever", "sciropp", "caffe", "caffè", "cialde", "capsule", "orzo ", "cacao", "cioccolat", "latte di", "kombucha", "bibita", "bibite", "san pellegrino", "levissima", "san benedetto", "dolomia", "lauretana", "plose", "surgiva", "acqua minerale"],
+      "escludi": ["birra", "vino", "gin ", "cioccolatin", "cioccolato fond", "latte intero", "latte fresco", "latte parz"],
+      "aliquote_attese": [10, 22]
+    },
+    "latticini": {
+      "keywords": ["latte", "formagg", "mozzarell", "burro", "panna", "yogurt", "ricott", "mascarpon", "stracchin", "gorgonzol", "parmigian", "grana", "pecorin", "asiago", "montasio", "fontina", "brie", "camembert", "caciott", "scamorz", "provol", "burrat", "stracciatell", "uova", "uovo", "gelato", "casatell", "tosella", "puzzone", "piave ", "malga", "caprino", "robiola", "taleggio", "latteria"],
+      "escludi": ["gelato al", "panna cotta pronta"],
+      "aliquote_attese": [4, 10]
+    },
+    "ortofrutta": {
+      "keywords": ["patat", "pomodor", "insalat", "lattug", "rucola", "radicch", "zucchin", "melanzan", "peperon", "cipoll", "aglio", "carot", "sedano", "finocch", "cavol", "verza", "broccol", "spinac", "biet", "porr", "fung", "porcin", "finferl", "chiodini", "asparag", "carciof", "fagiol", "pisell", "ceci", "lentic", "mela ", "mele ", "pera ", "pere ", "banan", "arancia", "arance", "limon", "lime", "uva ", "fragol", "lampon", "mirtill", "ribes", "mora ", "more ", "kiwi", "ananas", "mango", "avocado", "pesca ", "pesche", "albicocc", "prugn", "susin", "ciliegi", "anguri", "melon", "fico", "fichi", "castagn", "noci", "nocciol", "mandorl", "pinol", "erbe ", "basilic", "prezzemol", "rosmarin", "salvia", "timo", "menta", "zucca", "rapa", "rape", "cren", "erbett", "cetriol", "verdur", "frutta", "ortagg", "crauti", "topinamb", "tartuf"],
+      "escludi": ["succo", "confettur", "marmellat", "surgelat", "patatine", "chips"],
+      "aliquote_attese": [4, 5, 10]
+    },
+    "pane_pasta_riso": {
+      "keywords": ["pane", "panin", "grissin", "cracker", "focacc", "pizza base", "piadin", "pasta ", "spaghett", "penne", "tagliatell", "fettuccin", "lasagn", "ravioli", "tortell", "gnocch", "canederl", "casunziei", "cassunz", "riso ", "carnaroli", "arborio", "vialone", "basmati", "cous", "couscous", "orzo perlat", "pangrattat", "pan grattato", "cereali", "muesli", "fette biscott", "biscott", "brioch", "cornett", "croissant", "krapfen", "strudel", "torta", "dolce", "dolci", "pasticc", "wafer", "cioccolat", "zucchero", "miele", "marmellat", "confettur"],
+      "escludi": ["farina", "semola"],
+      "aliquote_attese": [4, 10]
+    },
+    "altro_alimentare": {
+      "keywords": ["olio", "aceto", "sale", "pepe", "spezie", "spezia", "curcum", "paprik", "curry", "senape", "maionese", "ketchup", "salsa", "sugo", "brodo", "dado", "conserv", "sott'oli", "sottoli", "sottacet", "capper", "oliv", "legumi", "surgelat", "gelato", "dessert", "semifredd", "lievito", "vanigl", "cannell", "gelatina", "colla di pesce", "agar", "panna vegetal", "tofu", "seitan", "soia", "salsa di soia", "wasabi", "sushi", "condiment", "insaporitor", "estratto", "concentrat", "polpa di", "pelati", "passata", "patatine", "chips", "frutta secca", "semi ", "granella", "canditi", "uvetta", "cocco", "burro di", "crema ", "topping", "sciroppo d'acero", "alimentar", "gastronom"],
+      "escludi": [],
+      "aliquote_attese": [4, 10, 22]
+    },
+    "non_alimentare": {
+      "keywords": ["detersiv", "detergent", "sgrass", "candegg", "ammoniac", "brillantant", "lavastovigl", "sapone", "carta igienic", "tovagliol", "tovagl", "rotolo", "rotoli", "asciugaman", "guant", "sacchett", "sacchi", "pellicol", "alluminio", "carta forno", "vaschett", "contenitor", "bicchier", "piatt", "posat", "coltell", "forchett", "cucchia", "pentol", "padell", "tegam", "teglia", "teglie", "attrezz", "macchin", "frigo", "forno", "lampad", "lampadin", "pile", "batterie", "cancelleria", "penna", "penne a sfera", "carta a4", "toner", "cartucc", "stampante", "abbonament", "canone", "software", "licenza", "noleggio", "manutenzion", "riparazion", "assistenza", "consulenz", "trasport", "spedizion", "corriere", "energia", "gas ", "acqua potabile", "telefon", "internet", "fibra", "assicuraz", "polizza", "pubblicit", "marketing", "sito web", "commission", "provvigion", "servizio", "servizi", "lavanderia", "biancheria", "lenzuol", "asciugaman", "cuscin", "coperta", "materass", "arredo", "arredi", "tavolo", "sedia", "sedie", "mobili", "ricambi", "cauzione", "vuoti", "imballo", "imballagg", "bombola", "co2", "gas alimentare", "ghiaccio secco", "candele", "fiori", "piante", "gadget", "divise", "abbigliament", "scarpe", "dpi", "estintor", "haccp", "analisi", "tamponi", "formazione", "corso", "rifiuti", "tari", "bollo", "imposta", "diritti", "spese", "interessi", "rata", "quota", "carburante", "gasolio", "benzina", "pedaggi", "parcheggi", "hotel", "albergo", "ristorante", "pasto"],
+      "escludi": [],
+      "aliquote_attese": [22, 10, 0]
+    }
+  },
+  "accessorie": ["trasporto", "spese di trasporto", "spese trasporto", "contributo trasporto", "cauzione", "vuoti a rendere", "resa vuoti", "imballo", "imballi", "conai", "bollo", "spese incasso", "spese bancarie", "sconto", "abbuono", "arrotondamento", "omaggio", "contributo ambientale", "rid ", "addebito"],
+  "fornitori": [
+    {"match": "goodilia", "default": "sfarinati", "nota": "negozio online farine (Agugiaro & Figna)"},
+    {"match": "schinosa", "default": "vino", "nota": "distributore vini"},
+    {"match": "cortina bevande", "default": "bevande_analcoliche", "nota": "distributore bevande: vino/birra decise dalle parole chiave"},
+    {"match": "cuzziol", "default": "bevande_analcoliche", "nota": "distributore bevande"},
+    {"match": "woerndle", "default": "altro_alimentare", "nota": "Woerndle Interservice: alimentari misti, vedi parole chiave"},
+    {"match": "wörndle", "default": "altro_alimentare", "nota": "idem"},
+    {"match": "unicomm", "default": "altro_alimentare", "nota": "Unicomm/Guarnier Catering: alimentari misti"},
+    {"match": "guarnier", "default": "altro_alimentare", "nota": "idem"},
+    {"match": "metro", "default": "altro_alimentare", "nota": "cash & carry"},
+    {"match": "macelleria", "default": "carne", "nota": "macelleria"},
+    {"match": "macello", "default": "carne", "nota": "macello"},
+    {"match": "carni", "default": "carne", "nota": "fornitore carni"},
+    {"match": "salumificio", "default": "carne", "nota": "salumi"},
+    {"match": "birrificio", "default": "birra", "nota": "birrificio"},
+    {"match": "cantina", "default": "vino", "nota": "cantina vinicola"},
+    {"match": "azienda agricola", "default": "ortofrutta", "nota": "azienda agricola: verificare"},
+    {"match": "molino", "default": "sfarinati", "nota": "molino"},
+    {"match": "panificio", "default": "pane_pasta_riso", "nota": "panificio"},
+    {"match": "latteria", "default": "latticini", "nota": "latteria"},
+    {"match": "caseificio", "default": "latticini", "nota": "caseificio"},
+    {"match": "ittic", "default": "pesce", "nota": "ittico"}
+  ]
+}
