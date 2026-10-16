@@ -1,0 +1,19 @@
+# dati grezzi e documenti restano su Drive, mai in git
+data/
+output/
+*.xlsx
+*.csv
+*.pdf
+*.xml
+*.p7m
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+!tests/fixtures/*.xml
+!tests/fixtures/*.csv
+__pycache__/
+.venv/
+.env
+*.docx

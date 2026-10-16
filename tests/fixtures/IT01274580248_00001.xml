@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>01274580248</IdCodice></IdTrasmittente>
+      <ProgressivoInvio>00001</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>0000000</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01274580248</IdCodice></IdFiscaleIVA>
+        <Anagrafica><Denominazione>GUARNIER CATERING UNICOMM SRL (TEST)</Denominazione></Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede><Indirizzo>Via E. Mattei 50</Indirizzo><CAP>36031</CAP><Comune>Dueville</Comune><Provincia>VI</Provincia><Nazione>IT</Nazione></Sede>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01241890258</IdCodice></IdFiscaleIVA>
+        <Anagrafica><Denominazione>LA CULLA DI ANGELETTI DANIELE</Denominazione></Anagrafica>
+      </DatiAnagrafici>
+      <Sede><Indirizzo>Via Giovanni Paolo I 9</Indirizzo><CAP>32040</CAP><Comune>Comelico Superiore</Comune><Provincia>BL</Provincia><Nazione>IT</Nazione></Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2025-03-15</Data>
+        <Numero>123</Numero>
+        <ImportoTotaleDocumento>537.47</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee><NumeroLinea>1</NumeroLinea><Descrizione>CARNE BOVINA ADULTA SCAMONE S/OSSO KG</Descrizione><Quantita>5.00</Quantita><UnitaMisura>KG</UnitaMisura><PrezzoUnitario>12.50</PrezzoUnitario><PrezzoTotale>62.50</PrezzoTotale><AliquotaIVA>10.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>2</NumeroLinea><Descrizione>SPECK ALTO ADIGE IGP META'</Descrizione><Quantita>2.00</Quantita><UnitaMisura>PZ</UnitaMisura><PrezzoUnitario>18.00</PrezzoUnitario><PrezzoTotale>36.00</PrezzoTotale><AliquotaIVA>10.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>3</NumeroLinea><Descrizione>MACINATO MISTO BOVINO/SUINO</Descrizione><Quantita>3.00</Quantita><UnitaMisura>KG</UnitaMisura><PrezzoUnitario>8.00</PrezzoUnitario><PrezzoTotale>24.00</PrezzoTotale><AliquotaIVA>10.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>4</NumeroLinea><Descrizione>FARINA TIPO 00 W280 SACCO 25 KG</Descrizione><Quantita>4.00</Quantita><UnitaMisura>PZ</UnitaMisura><PrezzoUnitario>22.40</PrezzoUnitario><PrezzoTotale>89.60</PrezzoTotale><AliquotaIVA>4.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>5</NumeroLinea><Descrizione>POLENTA BRAMATA FARINA DI MAIS 5KG</Descrizione><Quantita>2.00</Quantita><UnitaMisura>PZ</UnitaMisura><PrezzoUnitario>6.00</PrezzoUnitario><PrezzoTotale>12.00</PrezzoTotale><AliquotaIVA>4.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>6</NumeroLinea><Descrizione>PROSECCO DOC TREVISO EXTRA DRY 75CL</Descrizione><Quantita>12.00</Quantita><UnitaMisura>BT</UnitaMisura><PrezzoUnitario>5.40</PrezzoUnitario><PrezzoTotale>64.80</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>7</NumeroLinea><Descrizione>VINO BIANCO SOAVE DOC 75CL</Descrizione><Quantita>6.00</Quantita><UnitaMisura>BT</UnitaMisura><PrezzoUnitario>4.50</PrezzoUnitario><PrezzoTotale>27.00</PrezzoTotale><AliquotaIVA>10.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>8</NumeroLinea><Descrizione>BIRRA FORST KRONEN FUSTO 30 LT</Descrizione><Quantita>1.00</Quantita><UnitaMisura>PZ</UnitaMisura><PrezzoUnitario>85.00</PrezzoUnitario><PrezzoTotale>85.00</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>9</NumeroLinea><Descrizione>ACQUA NATURALE VETRO 1L</Descrizione><Quantita>24.00</Quantita><UnitaMisura>BT</UnitaMisura><PrezzoUnitario>0.60</PrezzoUnitario><PrezzoTotale>14.40</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>10</NumeroLinea><Descrizione>TONNO PINNE GIALLE FILETTI</Descrizione><Quantita>2.00</Quantita><UnitaMisura>KG</UnitaMisura><PrezzoUnitario>15.00</PrezzoUnitario><PrezzoTotale>30.00</PrezzoTotale><AliquotaIVA>10.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>11</NumeroLinea><Descrizione>SPESE DI TRASPORTO</Descrizione><Quantita>1.00</Quantita><PrezzoUnitario>8.00</PrezzoUnitario><PrezzoTotale>8.00</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DettaglioLinee><NumeroLinea>12</NumeroLinea><Descrizione>DETERSIVO LAVASTOVIGLIE 12KG</Descrizione><Quantita>1.00</Quantita><UnitaMisura>PZ</UnitaMisura><PrezzoUnitario>19.90</PrezzoUnitario><PrezzoTotale>19.90</PrezzoTotale><AliquotaIVA>22.00</AliquotaIVA></DettaglioLinee>
+      <DatiRiepilogo><AliquotaIVA>4.00</AliquotaIVA><ImponibileImporto>101.60</ImponibileImporto><Imposta>4.06</Imposta><EsigibilitaIVA>I</EsigibilitaIVA></DatiRiepilogo>
+      <DatiRiepilogo><AliquotaIVA>10.00</AliquotaIVA><ImponibileImporto>179.50</ImponibileImporto><Imposta>17.95</Imposta><EsigibilitaIVA>I</EsigibilitaIVA></DatiRiepilogo>
+      <DatiRiepilogo><AliquotaIVA>22.00</AliquotaIVA><ImponibileImporto>192.10</ImponibileImporto><Imposta>42.26</Imposta><EsigibilitaIVA>I</EsigibilitaIVA></DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento><CondizioniPagamento>TP02</CondizioniPagamento><DettaglioPagamento><ModalitaPagamento>MP05</ModalitaPagamento><ImportoPagamento>537.47</ImportoPagamento></DettaglioPagamento></DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>
